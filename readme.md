@@ -16,16 +16,16 @@
 **<span style="color:red">注意：</span>**在此例子中，SeaJS例子已经处理了jquery,underscore,backbone，当然ReactJS也得处理咯，我这里处理相对简单，将ReactJS第一行的typeof define==="function"&&define.amd
 改成了typeof define==="function"&&define.cmd即可，也就是将amd改成cmd。
 
-**例子目录结构：**
-app -->helloMessage.html   例子的主页面
-myreact --> app.jsx   入口组件
-myreact --> components--> HelloMessage.jsx  信息子组件
-sea-modules-->   依赖的库
-static\hello\src\build-->app.js  app.jsx编译后的js文件
-static\hello\src\build\components-->HellowMessage.js  HellowMessage.jsx编译后的js文件
+**例子目录结构：**  
+app -->helloMessage.html   例子的主页面  
+myreact --> app.jsx   入口组件  
+myreact --> components--> HelloMessage.jsx  信息子组件  
+sea-modules-->   依赖的库  
+static\hello\src\build-->app.js  app.jsx编译后的js文件  
+static\hello\src\build\components-->HellowMessage.js  HellowMessage.jsx编译后的js文件  
 
 **JSX文件编译：**安装nodejs（话说这个是必装的啊），npm install -g react-tools
-<https://www.npmjs.com/package/react-tools>
+<https://www.npmjs.com/package/react-tools>  
 执行命令：jsx -w -x jsx myreact/ static/hello/src/build
 在主目录下（hello-react-backbone）下执行
 -w 是观察文件修改，并自动重新生产js文件到指定的目录下
